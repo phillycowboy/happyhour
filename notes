@@ -1,0 +1,32 @@
+list of commands to know 
+
+git status 
+
+git add . -- uploads all of your files to github
+
+git commit -m "first commit" -- pushes all changes that you made to your project with a detailed message 
+
+git push origin master -- pushes it to the master branch and saves your work 
+
+
+
+Making a HappyHour App with The CocktailDB API
+
+1. youre going to greet the user 
+
+2. youre going to ask them if they want to see a list of drink 
+
+3.  give them the option to type drinks list or exit 
+
+4. show them a list of drinks with an index 
+
+5. upon recieivng the user input display recipe for a drink 
+
+6.  give the user an option to revisit the drink menu or exit the program 
+
+
+What classes am i going to need 
+
+CLI class dealing with details showing up on the terminal 
+API class to handle the api details 
+HappyHour class to deal with all the drinks 
