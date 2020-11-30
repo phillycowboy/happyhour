@@ -30,3 +30,8 @@ What classes am i going to need
 CLI class dealing with details showing up on the terminal 
 API class to handle the api details 
 HappyHour class to deal with all the drinks 
+
+data[0]["name"] = gets you the name of the beer 
+data[0]["tagline"] = gets you the tagline of the beer 
+data[0]["description"] = gets you the description of the beer 
+data[0]["food_pairing"] = gets you the food pairing for that beer 
