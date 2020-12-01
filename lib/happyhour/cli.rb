@@ -29,6 +29,7 @@ class CLI
             puts ""
             load_beer
         elsif input == "no"
+            puts ""
             puts "Thanks for stopping by!  :)"
             exit
         else
@@ -48,6 +49,7 @@ class CLI
             beer = HappyHour.all[index]
             display_beer_details(beer)
         elsif input == "no"
+            puts ""
             puts "Thanks for stopping by! :)"
             exit
         else
@@ -66,7 +68,9 @@ class CLI
         puts ""
         puts "Recommended Dishes: #{beer.food_pairing}"
         puts ""
-        puts "Would you like to make another selection? Type 'yes' to see the menu again, type 'no' to exit."
+        puts "Would you like to make another selection?"
+        puts "Type 'yes' to see the menu again" 
+        puts "Type 'no' to exit."
         make_another_selection
     end
 
@@ -75,6 +79,7 @@ class CLI
     end
 
     def try_again
+        puts ""
         puts "Sorry...I don't know that command"
     end
 
