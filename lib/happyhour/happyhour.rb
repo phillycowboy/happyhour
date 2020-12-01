@@ -1,8 +1,9 @@
 class HappyHour 
     @@all = []
 
-
-    def initialize 
+    
+    def initialize(beer_data)
+         
         @@all << self 
     end
 

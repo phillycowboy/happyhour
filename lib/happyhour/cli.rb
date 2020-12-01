@@ -3,8 +3,16 @@ class CLI
     def start 
         puts "Hello! Welcome to Happy Hour!"
         puts "Would you like to see a drink menu?"
-        API.load_data     #all info loaded and models created at this point 
-        input = gets.strip
+        input = gets.strip 
+        if input == "yes"
+            API.load_data
+        elsif input == ""
+            puts "Sorry type 'yes' or 'no'"
+            input = gets.strip
+        elsif input == "no"
+            puts "Thanks for stopping by!"
+            exit
+        end     
     end
 
 end 
