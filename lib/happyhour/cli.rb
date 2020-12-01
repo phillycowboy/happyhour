@@ -26,6 +26,9 @@ class CLI
         input = gets_answer
 
         if input == "yes"
+            puts ""
+            puts "BEER MENU"
+            puts ""
             load_beer
         elsif input == "no"
             puts "Thanks for stopping by!"
