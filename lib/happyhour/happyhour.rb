@@ -1,10 +1,11 @@
 class HappyHour 
     @@all = []
-
+    attr_accessor :name, :tagline
     
-    def initialize(beer_data)
-         
-        @@all << self 
+    def initialize(name, tagline)
+        @name = name 
+        @tagline = tagline
+       @@all << self 
     end
 
     def self.all 

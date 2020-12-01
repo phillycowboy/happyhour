@@ -7,10 +7,14 @@ class API
     def self.load_data
         response = RestClient.get(base_url + '/beers')
         data = JSON.parse(response.body)
-        data.each do |beer_data|
-           puts beer_data["name"]
-        #    binding.pry
-        end
-       
+            data.each do |beer|
+             name = beer["name"]
+             tagline = beer["tagline"]
+             HappyHour.new(name, tagline)
+            end
     end
+
+
+
+
 end 
