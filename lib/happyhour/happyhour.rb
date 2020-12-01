@@ -8,7 +8,7 @@ class HappyHour
         @description = description
         @food_pairing = food_pairing
         @abv = abv
-       @@all << self 
+        @@all << self 
     end
 
     def self.all 

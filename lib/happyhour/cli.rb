@@ -2,10 +2,8 @@ class CLI
 
     def start 
         puts "Hello! Welcome to Happy Hour!"
-        # puts "Would you like to see a drink menu?"
         API.load_data
         beer_menu_options
-        
     end
     
     
@@ -27,12 +25,15 @@ class CLI
 
         if input == "yes"
             puts ""
-            puts "BEER MENU"
+            puts "**BEER MENU**"
             puts ""
             load_beer
         elsif input == "no"
-            puts "Thanks for stopping by!"
+            puts "Thanks for stopping by!  :)"
             exit
+        else
+            try_again
+            beer_menu_options
         end
         puts ""
         puts "Please make a selection by number."
@@ -47,9 +48,12 @@ class CLI
             beer = HappyHour.all[index]
             display_beer_details(beer)
         elsif input == "no"
-            puts "Thanks for stopping by!"
+            puts "Thanks for stopping by! :)"
             exit
-        end
+        else
+            try_again
+            beer_menu_options
+         end
     end
 
     def display_beer_details(beer)
@@ -62,12 +66,16 @@ class CLI
         puts ""
         puts "Recommended Dishes: #{beer.food_pairing}"
         puts ""
-        puts "Would you like to make another selection?"
+        puts "Would you like to make another selection? Type 'yes' to see the menu again, type 'no' to exit."
         make_another_selection
     end
 
     def make_another_selection
      beer_menu
+    end
+
+    def try_again
+        puts "Sorry...I don't know that command"
     end
 
     def gets_answer
