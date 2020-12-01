@@ -37,7 +37,7 @@ class CLI
             beer_menu_options
         end
         puts ""
-        puts "Please make a selection by number."
+        puts "Please make a selection between 1-25."
         choose_beer
     end
 
