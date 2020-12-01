@@ -10,7 +10,10 @@ class API
             data.each do |beer|
              name = beer["name"]
              tagline = beer["tagline"]
-             HappyHour.new(name, tagline)
+             description = beer["description"]
+             food_pairing = beer["food_pairing"]
+             abv = beer["abv"]
+             HappyHour.new(name, tagline, description, food_pairing, abv)
             end
     end
 

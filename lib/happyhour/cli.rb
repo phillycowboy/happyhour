@@ -31,6 +31,40 @@ class CLI
             puts "Thanks for stopping by!"
             exit
         end
+        puts ""
+        puts "Please make a selection by number."
+        choose_beer
+    end
+
+    def choose_beer
+        input = gets_answer
+
+        if input.to_i.between?(1, HappyHour.all.length)
+            index = input.to_i - 1
+            beer = HappyHour.all[index]
+            display_beer_details(beer)
+        elsif input == "no"
+            puts "Thanks for stopping by!"
+            exit
+        end
+    end
+
+    def display_beer_details(beer)
+        puts ""
+        puts "Selection: #{beer.name}"
+        puts ""
+        puts "Description: #{beer.description}"
+        puts ""
+        puts "ABV is : #{beer.abv}%"
+        puts ""
+        puts "Recommended Dishes: #{beer.food_pairing}"
+        puts ""
+        puts "Would you like to make another selection?"
+        make_another_selection
+    end
+
+    def make_another_selection
+     beer_menu
     end
 
     def gets_answer
