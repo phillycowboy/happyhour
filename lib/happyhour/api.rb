@@ -11,7 +11,7 @@ class API
              name = beer["name"]
              tagline = beer["tagline"]
              description = beer["description"]
-             food_pairing = beer["food_pairing"]
+             food_pairing = beer["food_pairing"].join(", ")
              abv = beer["abv"]
              HappyHour.new(name, tagline, description, food_pairing, abv)
             end
