@@ -23,12 +23,12 @@ class CLI
     def beer_menu 
         input = gets_answer
 
-        if input == "yes"
+        if input == "yes" 
             puts ""
             puts "**BEER MENU**"
             puts ""
             load_beer
-        elsif input == "no"
+        elsif input == "no" 
             puts ""
             puts "Thanks for stopping by!  :)"
             exit
@@ -48,7 +48,7 @@ class CLI
             index = input.to_i - 1
             beer = HappyHour.all[index]
             display_beer_details(beer)
-        elsif input == "no"
+        elsif input == "no" 
             puts ""
             puts "Thanks for stopping by! :)"
             exit
