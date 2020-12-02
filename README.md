@@ -1,8 +1,15 @@
 # Happyhour
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/happyhour`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to Happyhour!!!  Everyone's favorite time of day.  Happyhour is a CLI Gem that takes a list of beers from an API and displays them for the user upon receiving their input.  Once they choose which beer they would like to see, they are then presented with the details of the beverage.
 
-TODO: Delete this and the text above, and describe your gem
+Selection: 
+Description:
+ABV:
+and Food Pairings:
+
+They are then asked if they would like to make another selection, upon receving the command they are either rerouted back to the initial list, or they are thanked for stopping by and exit the program. 
+
+API provided by: https://api.punkapi.com/v2/beers 
 
 ## Installation
 
@@ -22,7 +29,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To get started please run the command 'bundle install' in the terminal.  This will ensure that all the Gems are loaded and ready to use.
+To run the CLI Gem Happyhour. Type 'bin/run' in the terminal.
+There you will be greeted and given an option to either see a menu/or exit the program. 
+Please follow the prompt from the terminal to guide you through the Gem.
+
+Have Fun!
 
 ## Development
 
