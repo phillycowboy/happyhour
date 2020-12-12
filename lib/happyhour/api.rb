@@ -1,4 +1,4 @@
-class API 
+class API    
 
     def self.base_url 
         "https://api.punkapi.com/v2"

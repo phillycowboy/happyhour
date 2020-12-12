@@ -3,6 +3,7 @@ class CLI
     def start 
         puts "Hello! Welcome to Happy Hour!"
         API.load_data
+        HappyHour.print_abvs
         beer_menu_options
     end
     

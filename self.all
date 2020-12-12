@@ -1,0 +1,13 @@
+
+[1mFrom:[0m /mnt/c/Users/benha/Development/code/Mod1/happyhour/lib/happyhour/happyhour.rb:24 HappyHour.print_abvs:
+
+    [1;34m22[0m: [32mdef[0m [1;36mself[0m.[1;34mprint_abvs[0m
+    [1;34m23[0m:     [1;36mself[0m.all.map [32mdo[0m |beer|
+ => [1;34m24[0m:         binding.pry
+    [1;34m25[0m:         beer.abv < [1;34m5[0m  
+    [1;34m26[0m:         beer.all
+    [1;34m27[0m:     
+    [1;34m28[0m:     [32mend[0m
+    [1;34m29[0m: 
+    [1;34m30[0m: [32mend[0m
+
