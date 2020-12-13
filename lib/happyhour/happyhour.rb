@@ -20,13 +20,12 @@ class HappyHour
     #CODE CHALLENGE NEW METHOD 
     #going to return all beer instances with an abv below 5. 
     def self.print_abvs
-        # new_array = []
-        @@all.map do |beer| 
+       new_array =  @@all.select do |beer| 
             if beer.abv < 5.0
-            # new_array << beer
+                beer
             end
         end
-        # new_array
+        new_array
     end
 
    
